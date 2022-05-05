@@ -1,5 +1,8 @@
 //Fai inserire un numero, che chiameremo N, all’utente.
 const N = Number(prompt("Inserisci un numero"));
+while (isNaN(N)) {
+    N = Number(prompt("Devi inserire un numero!!!!"))
+}
 for (let i = 0; i < N; i++) {
     const array = [];
     for (let j = 0; j < 10; j++) {
